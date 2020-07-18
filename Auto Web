@@ -1,0 +1,22 @@
+from selenium import webdriver
+driver = webdriver.Chrome()
+
+driver.get("http://cbseresults.nic.in/class12/Class12th20.htm")
+
+rollnumber = driver.find_element_by_xpath('/html/body/table[3]/tbody/tr/td/font/center[2]/form/div[1]/center/table/tbody/tr[1]/td[2]/input')
+rollnumber.send_keys('2256780')
+
+
+School_No = driver.find_element_by_xpath('/html/body/table[3]/tbody/tr/td/font/center[2]/form/div[1]/center/table/tbody/tr[2]/td[2]/input')
+School_No.send_keys('65061')
+
+
+Centre = driver.find_element_by_xpath('/html/body/table[3]/tbody/tr/td/font/center[2]/form/div[1]/center/table/tbody/tr[3]/td[2]/input')
+Centre.send_keys('6742')
+
+Admit_Card_ID.driver.find_element_by_xpath('/html/body/table[3]/tbody/tr/td/font/center[2]/form/div[1]/center/table/tbody/tr[4]/td[2]/input')
+Admit_Card_ID.send_keys('RP786542')
+
+
+Submit = driver.find_element_by_xpath('/html/body/table[3]/tbody/tr/td/font/center[2]/form/div[1]/center/table/tbody/tr[6]/td/input[1]')
+Submit.click()
